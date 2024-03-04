@@ -1,2 +1,2 @@
-# general_physics_project
+# General Physics Project
 Code for project
