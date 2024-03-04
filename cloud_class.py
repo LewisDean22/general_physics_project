@@ -19,9 +19,8 @@ class cloud:
         r and theta drawn from uniform distributions, creating
         clouds enclosed within the specified radius of sky.
         """
-        self.radius = max_radial_coord # m
         self.volume = np.random.normal(10**9, 5*10**8) # m^3
-        self.r_coord = np.random.uniform(0, self.radius) # m
+        self.r_coord = np.random.uniform(0, max_radial_coord) # m
         self.theta_coord = np.random.uniform(0, 2*np.pi)
         
     def initial_cartesian_position(self):
